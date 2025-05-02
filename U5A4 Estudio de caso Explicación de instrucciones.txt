@@ -1,0 +1,33 @@
+U5A4: Estudio de caso: Explicación de instrucciones
+Breve guía de Word:
+La instrucción INSERT INTO se utiliza para agregar nuevos registros a una tabla que ya exista.
+Ejemplo: 
+INSERT INTO Nombre de la tabla (Columna1, Columna2)
+VALUES (Valor1, Valor2);
+
+La instrucción UPDATE se usa para modificar uno o más campos de registros existentes.
+UPDATE Nombre de la tabla
+SET Columna1 = Valor1, Columna2 = Valor2
+WHERE Condición;
+Es importante incluir la cláusula WHERE para evitar actualizar todos los registros de la tabla por error.
+
+La instrucción DELETE se emplea para eliminar registros específicos de una tabla.
+DELETE FROM Nombre de la tabla
+WHERE Condición;
+Como en update, es importante incluir WHERE. Sin esta cláusula se eliminarán todos los registros de la tabla.
+
+Video explicativo:
+https://www.youtube.com/watch?v=Zgx65aMVxWw 
+
+Conclusión:
+Aprender a insertar, actualizar y eliminar datos en una base de datos es muy importante para cualquier persona que quiera trabajar con programación o sistemas. Estas operaciones son básicas, pero necesarias para manejar la información correctamente. Con práctica y ejemplos es más fácil entender cómo funciona SQL y cómo usarlo en la vida real.
+
+Nueva consulta SQL:
+Se usa para aumentar el precio de un producto y visualizar el cambio.
+UPDATE Products
+SET UnitPrice = UnitPrice * 1.10
+WHERE ProductName = 'Chai';
+SELECT ProductName, UnitPrice
+FROM Products
+WHERE ProductName = 'Chai';
+
